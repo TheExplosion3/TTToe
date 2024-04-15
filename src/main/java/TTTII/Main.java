@@ -1,31 +1,20 @@
 package TTTII;
 
 import java.util.Arrays;
-import java.util.LinkedHashMap;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import javafx.scene.image.ImageView;
 
 public class Main extends Application {
-	public static ImageInit IMAGES; 
 	public static final double BOXWIDTH = 900;
 	public static final double BOXHEIGHT = 900;
 	public static final String[] XWIN = {"X", "X", "X"};
@@ -40,16 +29,6 @@ public class Main extends Application {
 			{"","",""},
 			{"","",""}
 			};
-	{
-		try {
-			IMAGES = ImageInit.getInstance();
-		}
-		catch(Exception e) {
-			System.out.printf("Exception caught, printing trace & exiting.%n");
-			e.printStackTrace();
-			System.exit(1); 
-		}
-	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
