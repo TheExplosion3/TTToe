@@ -33,6 +33,7 @@ public class Main extends Application {
 	public static String WINCONDITION = null;
 	/**
 	 * INPUT ARR
+	 * idk its just here
 	 */
 	public static String[][] BOARD = {
 			{"","",""},
